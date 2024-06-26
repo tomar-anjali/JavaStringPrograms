@@ -2,10 +2,12 @@
 and check wheather the string is palindrome or not. */
 
 //CODE
-
+import java.util.Scanner;
 public class PalindromeClass	{
-  public static void main(String[] args)	{
-    	String s="hello";
+  public static void main(String[] args)
+{
+	Scanner scanner=new Scanner(System.in);
+    	String s=scanner.next();
     	String rev="";
 
 	//for reverse the characters in string
