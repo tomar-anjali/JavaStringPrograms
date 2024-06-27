@@ -10,15 +10,15 @@ public class DuplicateChars{
           Scanner sc=new Scanner(System.in);
           String str=sc.next().toLowerCase();
           String[] splitedStr = str.split(" ");
-          String str="";
           int count=0;
-          for(int i=0;i<=splitStr.length-1;i++){
-               revstr=splitStr[i];
-               for(int j=revstr.length()-1;i++){
-                    System.out.print(revstr.charAt(j));
+          for(char c='a'; c<='z'; c++){
+               for(int i=str.length()-1;i++){
+                    if(c==s.charAt(i)){
+                        count++;
+                    }
                }
-               if(i<str.length()-1){
-                    System.out.print(" ");
+               if(icount>1){
+                    System.out.print(c+""+count);
                }
           }
      }
