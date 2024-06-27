@@ -1,1 +1,29 @@
+/*
+*/
 
+import java.util.Scanner;
+public class ReverseWords{
+     public static void main(String[] args){
+          Scanner sc=new Scanner(System.in);
+          String str=sc.next();
+          String[] splitedStr = str.split(" ");
+
+          String revstr="";
+          for(int i=0;i<=splitStr.length-1;i++){
+               revstr=splitStr[i];
+                if(i%2==0)  {
+                     for(int j=revstr.length()-1;i++){
+                          System.out.print(revstr.charAt(j));
+                     }
+                }
+                else
+                    System.out.print(splitedstr[i]);
+
+
+               //Printing space
+                if(i<str.length()-1){
+                    System.out.print(" ");
+               }
+          }
+     }
+}
